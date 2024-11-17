@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>coffee shop</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Arima:wght@100..700&family=Dancing+Script:wght@400..700&family=Great+Vibes&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&family=Updock&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <div class="navbar">
+            <div class="nav-img">
+                <!-- <img src="" alt="Logo" > -->
+            </div>
+            <div class="menu-items">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="delivery.html">Delivery</a></li>
+                    <li><a href="reservation.html">Reservation</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="section1">
+            <img src="https://i.pinimg.com/736x/f2/2c/ad/f22cadc2c85877b6b0b4ba4edc099483.jpg" alt="">
+            <div class="welcome">
+                <h1>Welcome</h1>
+                <h2>Coffee</h2>
+                <h3>Reserve A Table </h3>
+                <div class="btn">
+                    <a href="reservation.html">Book Now!</a>
+                </div>
+            </div>
+        </div>
+        <div class="section2">
+            <div class="contents">
+                <h1>Made with Love</h1>
+                <h1>Scoop.Brew.Pour.Sip.Ahhh</h1>
+                <p>"Coffee is not just a drink; it’s a ritual that begins every day with 
+                    a promise. A promise to pause, to breathe, and to face the world with a little more energy, a little more optimism, and a whole lot of determination."</p>
+                <div class="btn">
+                    <a href="menu.html">MENU</a>
+                </div>
+            </div>
+            <div class="img">
+                <img src="images/5.jpg"
+                    alt="">
+            </div>
+        </div>
+        <div class="section3">
+            <div class="img">
+                <img src="images/6.jpg" alt="">
+            </div>
+            <div class="contents">
+                <h1>ABOUT </h1>
+                <h1>Our Coffee Shop</h1>
+                <h4>HOURS</h4>
+                <ul type="none">
+                    <li>Monday..........9am-1am</li>
+                    <li>Tuesday..........9am-1am</span></li>
+                    <li><span>Wednesday</span>..........<span>9am-1am</span></li>
+                    <li><span>Thursday</span>..........<span>9am-1am</span></li>
+                    <li><span>Friday</span>..........<span>9am-3am</span></li>
+                    <li><span>Saturday</span>..........<span>9am-3am</span></li>
+                    <li><span>Sunday</span>.........<span>9am-3am</span></li>
+                </ul>
+                <h4>PHONE</h4>
+                <ul type="none" class="no">
+                    <li>+91 123456789</li>
+                    <li>+91 987652011</li>
+                </ul>
+                <div class="btn">
+                    <a href="about.html">ABOUT</a>
+                </div>
+            </div>
+
+        </div>
+        <div class="section4">
+            <h1>Amenities</h1>
+            <div class="amenities">
+                <div class="amenity-item">
+                    <i class="fa-solid fa-motorcycle"></i>
+                    <p>Home Delivery</p>
+                </div>
+                <div class="amenity-item">
+                    <i class="fa-solid fa-box"></i>
+                    <p>Take Away</p>
+                </div>
+                <div class="amenity-item">
+                    <i class="fa-solid fa-money-check-dollar"></i>
+                    <p>Multiple payment methods</p>
+                </div>
+                <div class="amenity-item">
+                    <i class="fa-solid fa-champagne-glasses"></i>
+                    <p>Party orders</p>
+                </div>
+            </div>
+            <div class="a-btn">
+                <a href="delivery.html">Order Now</a>
+            </div>
+        </div>
+        <div class="section7">
+            <footer>
+                <p> Caffeinaura @ 2024 43 Angel street , Jalandhar, Punjab. <br>Tel : (+91 123456789). <br> All
+                    rights reserved.</p>
+                <p>ARTICLES - COPY RIGHTS POLICY - CAREERS</p>
+            </footer>
+        </div>
+    </div>
+    </div>
+</body>
+<script>
+    
+    // Interactive welcome text effect
+    const welcomeText = document.querySelector('.welcome h1');
+    const textArray = ["Welcome", "Enjoy", "Relax"];
+    let textIndex = 0;
+
+    setInterval(() => {
+        textIndex = (textIndex + 1) % textArray.length;
+        welcomeText.textContent = textArray[textIndex];
+    }, 3000);
+
+   
+    // Interactive amenities hover effects
+    const amenityItems = document.querySelectorAll('.amenity-item');
+    amenityItems.forEach(item => {
+        item.addEventListener('mouseover', () => {
+            item.style.transform = 'scale(1.1)';
+            item.style.transition = '0.3s';
+        });
+        item.addEventListener('mouseout', () => {
+            item.style.transform = 'scale(1)';
+        });
+    });
+
+    // Random background image on each page load
+    const section1 = document.querySelector('.section1');
+const bgImages = [
+    'https://i.pinimg.com/736x/e5/e2/2e/e5e22e988deb581c2ff2363e7b26f116.jpg',
+    'https://i.pinimg.com/736x/52/49/36/524936f2f9a016d2c470dfb6073da588.jpg',
+    'https://i.pinimg.com/736x/0e/ab/88/0eab88c8c2b368c9f1d0867b4d535b32.jpg',
+    'https://i.pinimg.com/736x/d4/8d/42/d48d427e84a75499bab4fe397bc171f7.jpg',
+    'https://i.pinimg.com/736x/0a/f0/ca/0af0ca57ea7cd94c286a230d2943e177.jpg',
+    'https://i.pinimg.com/736x/76/a9/a5/76a9a5725af0cad4fe514a475f18e114.jpg',
+    'https://i.pinimg.com/736x/21/97/2f/21972fe7f2c523db37a60d389e00ac5b.jpg'
+];
+
+// Function to change the background image
+function changeBackgroundImage() {
+    const randomImage = bgImages[Math.floor(Math.random() * bgImages.length)];
+    section1.style.backgroundImage = `url(${randomImage})`;
+}
+
+// Initial background change when the page loads
+changeBackgroundImage();
+
+// Change background image every 5 seconds (5000 milliseconds)
+setInterval(changeBackgroundImage, 2000);
+
+
+    const style = document.createElement('style');
+    style.innerHTML = `
+        @keyframes shake {
+            0%, 100% { transform: translateX(0); }
+            25% { transform: translateX(-5px); }
+            50% { transform: translateX(5px); }
+            75% { transform: translateX(-5px); }
+        }
+    `;
+    document.head.appendChild(style);
+    
+    document.querySelectorAll('.menu-items li').forEach((item) => {
+        item.addEventListener('mouseover', () => {
+            item.style.animation = 'shake 0.5s';
+        });
+        item.addEventListener('animationend', () => {
+            item.style.animation = '';
+        });
+    });
+   
+   
+</script>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>coffee shop</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arima:wght@100..700&family=Dancing+Script:wght@400..700&family=Great+Vibes&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&family=Updock&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <div class="navbar">
+            <div class="nav-img">
+                <!-- <img src="./images/logo-black-removebg-preview.png" alt="Logo"> -->
+            </div>
+            <div class="menu-items">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="delivery.html">Delivery</a></li>
+                    <li><a href="reservation.html">Reservation</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>  
+      <div class="contactus">
+        <div class="contact">
+            <div class="img">
+              <img src="images/40.jpg" alt="">
+            </div>
+            <div class="contact-contents">
+              <h1>Contact Us </h1>
+              <h2>Get in touch</h2>
+              <p>We'd love to hear from you! Whether you have a question, need a reservation, or want to give a feedback, we're  here to help.</p>
+              <ul type="none">
+                  <li>Mon - Sun</li>
+                  <li>Angel Street, Jalandhar</li>
+                  <li>+91 123456789, +91 92992927</li>
+              </ul>
+            </div>
+      </div>
+      <div class="contactus2">
+        <div class="contact">
+            <div class="form">
+                <form action="#">
+                    <h1>Contact us</h1>
+                    <textarea name="feedback" placeholder="Your message"></textarea><br>
+                    <input type="text" placeholder="Your name"><br>
+                    <input type="email" placeholder="Your email"><br>
+                    <input type="submit" id="submit">
+                </form>
+             </div> 
+                   <div class="img">
+                <img src="images/39.jpg" alt="">
+              </div>
+          </div>
+        </div> 
+      </div>
+        <div class="section7">
+            <footer>
+                <p>Sweet and Savory @ 2024 43 Angel street ,  Jalandhar, Punjab. <br>Tel : (+91 123456789). <br> All rights reserved.</p>
+                <p>ARTICLES - COPY RIGHTS POLICY - CAREERS</p>
+            </footer>
+           </div>
+       </div>
+    </div>
+</body>
+<script>const style = document.createElement('style');
+    style.innerHTML = `
+        @keyframes shake {
+            0%, 100% { transform: translateX(0); }
+            25% { transform: translateX(-5px); }
+            50% { transform: translateX(5px); }
+            75% { transform: translateX(-5px); }
+        }
+    `;
+    document.head.appendChild(style);
+    
+    document.querySelectorAll('.menu-items li').forEach((item) => {
+        item.addEventListener('mouseover', () => {
+            item.style.animation = 'shake 0.5s';
+        });
+        item.addEventListener('animationend', () => {
+            item.style.animation = '';
+        });
+    });</script>
+</html>
